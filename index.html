@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Web</title>
+    <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5814e5440e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="Header">
+        <div class="contenedor">
+            <div class="encabezado">
+                <h2>Port<span>Folio</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#My-Projects">My Projects</a></li>
+                    <li><a href="#ContacMe">Contact</a></li>
+                    <li><a href="#preguntas">Preguntas</a></li>
+                </ul>
+               
+            </nav>
+            
+           
+        
+        </div> 
+
+        
+
+        <div class="Home">
+            
+            <div class="Texto">
+                <h3>Hellow, My Name is</h3>
+                <h1>Fernando <span>Tejero</span></h1>
+                <h4>And i'm Software Developer</h4>
+                <br>
+                <a class="CV" download="" href="Fernando2.0.pdf">Download My CV</a>
+            </div>
+            
+            
+            <div class="imagen">
+                <img src="imagenes/fondo.jpg" width="300px" alt="">
+            </div>
+            
+            
+        </div>
+
+
+        <div class="iconos">
+            <div class="iconos-texto">
+                <h4>Contact <span>Me</span></h4>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/fernandotejero00/?hl=es" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-tejero-fierro-a56176216/" target="blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="about-me" id="about-me">
+        <div class="imagen-about">
+            <img src="imagenes/Fernando2.0.png"  alt="">
+        </div>
+        <div class="textos-about">
+            <h2>About Me</h2>
+            <h3>Web developer<span> & Designer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illo natus iure at porro asperiores aliquam alias quae
+                numquam earum modi pariatur <br> distinctio repellendus unde exercitationem, <br> possimus rerum temporibus qui dolorum?</p>
+                
+                <button>Read More</button>
+        </div>
+            
+    </div>
+
+    <div class="myprojects" id="My-Projects">
+        <div class="textosprojects">
+            <h2>My Proj<span>ects</span></h2>
+            <p class="project-texto">In this section you can see my diferents projects  and the diferent tecnologies <br> that I use for created</p>
+        </div>
+
+        <div class="caja-projects">
+            <div class="caja">
+                <img src="bosques/imagenes/bosque tropical.jpg" width="100px" alt="">
+                <h4>Web Site Bosques</h4>
+               <p class="Halloween">In this project I used <br> Html Css And javascript for develop it</p>
+                <a href="bosques/indexarboles.html" target="blank"><button>See More</button></a>
+            </div>
+            <div class="caja">
+                <img src="imagenes/calabaza.png" width="100px" alt="">
+                <h4>Web Site Halloween</h4>
+               <p class="Halloween">In this project I used <br> Html Css And javascript for develop it</p>
+                <a href="bosques/halloween/indexHalloween.html" target="blank"><button>See More</button></a>
+            </div>
+            <div class="caja">
+                <img src="proyecto personal.html/series/imagenes/pixel.jpg" width="100px" alt="">
+                <h4>Web Site Films and Series</h4>
+               <p class="Halloween">In this project I used <br> Html Css And javascript for develop it</p>
+                <a href="proyecto personal.html/series/index.html" target="blank"><button>See More</button></a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="contactame" id="ContacMe">
+
+            <h2>Contact <span>Me</span></h2>
+
+           <div class="controls">
+                <input class="input1" type="text" id="nombre" placeholder="Ingrese su nombre">
+                <p id="parrafo"></p>
+                <input class="input2" type="email" id="email" placeholder="Ingrese su email">
+                <p id="parrafo2"></p>
+                <textarea class="input3" name="" id="" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
+                <button class="input3" onclick=validar() >Send Message</button>
+           </div>
+        
+        </div>
+
+        <section class="preguntasfrecuentes" id="preguntas">
+                <h1>Preguntas <span> Frecuentes</span></h1>
+            <div class="contenedor-textos">
+                <div class="textos">
+                    <h2>¿Cuenta usted con experiencia laboral?</h2>
+                    <i  id="abrir" onclick=abrir() class="fas fa-angle-down"></i>
+                    <i id="cerrar" onclick=cerrar() class="fas fa-angle-up"></i>
+                </div>
+                <div class="parrafotexto" id="parrafotexto">
+                    <p>No, ahora mismo estoy cursando el ciclo formativo de grado superior de DAM. <br>
+                    Sin embargo si cuento con experiencia realizando projectos propios como este portafolio.</p><br>
+                    
+                </div>
+
+
+
+                <div class="textos">
+                    <h2>¿Cuales son las tecnologias que dominas?</h2>
+                    <i  id="abrir2" onclick=abrir2() class="fas fa-angle-down"></i>
+                    <i id="cerrar2" onclick=cerrar2() class="fas fa-angle-up"></i>
+                </div>
+                <div class="parrafotexto2" id="parrafotexto2">
+                    <p>Las tecnologias que mas domino son : Html, Css, Javascript y algo de java</p>
+                    
+                </div>
+
+            </div>
+            
+
+
+
+        </section>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="footer">
+            <div class="textos-footer">
+                <h2>Created for <span>Fernando Tejero</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Adipisci architecto quae qui doloremque vitae modi quis quod quaerat. <br>
+                     Impedit repudiandae nostrum dignissimos cupiditate  porro  aliquam explicabo, pariatur ducimus saepe sed.</p>
+            </div>
+            <div class="buttom">
+                <a href="#Header"><button><i class="fas fa-angle-double-up"></i></button></a>
+
+            </div>
+        </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

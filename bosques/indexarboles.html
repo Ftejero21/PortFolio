@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosque.com</title>
+    <script src="/bosques/jsarboles/scrollreveal.js"></script>
+    <link rel="stylesheet" href="estilosarboles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="titulo">
+                <h2>Bosques</h2>
+            </div>
+            <div class="navegacion">
+                <a href="#bosques"> Tipos de Bosques</a>
+                
+                <a href="#contact">Contáctame</a>
+            </div>
+        </nav>
+
+        <div class="textos">
+            <h2>¿Has pensado en visitar nuestros bosques de España? <br> !No lo pienses mas¡</h2>
+            <p>España destaca por su increible cantidad de bosques puros que se extienden <br>desde Andalucía hasta
+                Madrid ¿Te Gustaría visitarlos?</p>
+            <button><a href="#">Si</a></button>
+        </div>
+    </header>
+    <main>
+        <section class="bosques" id="bosques">
+            <div class="bosques-contenedor">
+                <div class="bosques-encabezado">
+                    <h1>Tipos de Bosques</h1>
+                </div>
+
+
+                <div class="bosques-caja" id="humedo">
+                    <img src="imagenes/bosques humedos.jpg" width="400px" alt="">
+                    <div class="caja-texto">
+                        <h2>Bosque Humedo</h2>
+                        <p>Albergan una enorme diversidad de flora. En la mayor parte de los casos, no se encuentran especies de árboles
+                            dominantes.  Los bosques húmedos tropicales constituyen un mundo aparte, y su importancia para el ecosistema
+                            global y la existencia humana es inmensa.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <br>
+                <div class="bosques-caja" id="seco">
+                    <img src="imagenes/bosque seco.jpg" width="390px" alt="">
+                    <div class="caja-texto">
+                        <h2>Bosque seco</h2>
+                        <p> toman ese nombre porque las características ambientales son particularmente duras <br> debido a la ausencia de agua de
+                            lluvia por largos periodos de tiempo durante el año. <br>
+
+                             Muchas de las plantas de los bosques secos son espinosas y
+                            con hojas pequeñas que pierden durante la temporada seca.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <br>
+                <div class="bosques-caja" id="tropical">
+                    <img src="imagenes/bosque tropical.jpg" width="400px" alt="">
+                    <div class="caja-texto">
+                        <h2>Bosque tropical</h2>
+                        <p>Son aquellos bosques situados en la zona intertropical y que, <br> consecuentemente, presentan
+                            clima tropical, y cuya vegetación predominante es de hoja ancha. Su temperatura promedio
+                            anual es, por lo general, superior a los 24 °C,</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </section>
+        <section class="Contactame" id="contact">
+
+            <div class="contactame-contenedor">
+                <div class="contactame-textos">
+                    <h2>¿Te Gustaría hacer un tour alrededor de estos maravillosos Bosques?</h2>
+                    <p>Regístrate y en cuestión de minutos recibiras un email con toda la información que necesitas 
+                        y no solo eso si te registras en este Black Friday recibirás un descuento del 30%!! ¡A qué esperas regístrate ya!
+                    </p>
+
+                    <button onclick=validar()>Enviar Registro</button>
+                </div>
+                    <br>
+                <div class="form">
+                        <h3>Registro</h3>
+                    <input type="text" id="nombre" placeholder="Ingrese Su Nombre">
+                    <p id="parrafo"></p>
+                    <input type="text" id="apellido" placeholder="Ingrese sus Apellidos">
+                    <p id="parrafo2"></p>
+                    <input type="email" id="Email" placeholder="Ingrese su Email">
+                    <p id="parrafo3"></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+<script src="/bosques/jsarboles/main.js"></script>
+</body>
+
+</html>

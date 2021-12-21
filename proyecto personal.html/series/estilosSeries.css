@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    background-color: black;
+}
+
+
+
+
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    
+}
+
+header .encabezado{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+    
+}
+
+header .titulo{
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: fantasy;
+}
+
+span{
+    color:darkturquoise;
+}
+
+nav{
+    margin-top: 40px;
+    margin-right: 550px;
+    position:relative;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 25px;
+    transition: .3s;
+    
+
+}
+
+nav a:hover{
+     color: turquoise;
+
+}
+
+ .Buscador{
+    position: relative;
+    margin-top: 45px;
+    margin-right: 75px;
+}
+.Buscador input{
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    text-overflow: none;    
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+
+}
+ 
+.Buscador input:hover{
+    background-color: white;
+    color: black;
+}
+
+.peliculas-titulo{
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    margin-left: 175px;
+    font-size: 35px;
+    font-family: fantasy;
+    transition: 0.3s ease-in;
+    width: 0;
+}
+
+.peliculas-titulo:hover{
+    color: turquoise;
+    font-size: 50px
+}
+
+.caja{
+    
+    
+    
+    
+    font-weight: bold;
+    width: 240px;
+    height: 300px;
+    line-height: 120px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 15px 15px 10px
+    
+
+}
+
+
+
+.caja:hover{
+    transform: scale(1.15);    
+    
+}
+    
+.peliculas{
+    display: flex;
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+  
+
+
+ .Series .caja-contenedor{
+     display: flex;
+     
+     width: 80%;
+     flex-wrap: wrap;
+     
+ } 
+
+
+ .Series .caja-contenedor .caja{
+     border: 1px white solid;
+     border-radius: 15px;
+
+
+ }
+
+
+
+
+
+
+
+.series-titulo{
+      color: white;
+      font-family: fantasy;
+      margin-bottom: 25px;
+      margin-left: 175px;
+      margin-top: 25px;
+      font-size: 35px;
+      transition: 0.3s ease-in;
+      width: 0;
+  }
+
+  .series-titulo:hover{
+      color: turquoise;
+      font-size: 50px;
+  }
+
+
+  .caja-img{
+      margin-top: 0;
+     
+  }
+
+  .caja img{
+      border-radius: 5px;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      
+
+  }
+
+  .caja p{
+      position: relative;
+      font-size: 15px;
+      margin-bottom: 0px;
+      text-align: center;
+  }
+ 
+  
+footer{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid white;
+    font-family: cursive;
+    margin-top: 50px;
+    background-color: gray;
+    
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+    margin: 50px auto;
+    
+    
+
+
+}
+
+.Encabezado-footer{
+    margin-left: 45px;
+}
+
+.Encabezado-footer h2{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.Encabezado-footer p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+
+
+
+.iconos-container i{
+    padding: 5px;
+    font-size: 20px;
+    margin: 15px;
+    transition: 0.4 ease-in;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    
+    
+    
+}
+
+.iconos-container i:hover{
+    transform: scale(1.50);
+    background-color: turquoise;
+    border-radius: 5px;
+}
+
+form{
+    width: 420px;
+    height: 400px;
+    background-color: white ;
+    margin: 0px auto;
+    margin-top: 200px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px 0px  turquoise;
+
+
+
+
+
+}
+
+.encabezado-formulario{
+    color: black;
+    font-family: cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    transition: 0.5s;
+   
+}
+
+.encabezado-formulario:hover{
+    color: turquoise;
+}
+
+
+.input{
+    
+    display: block;
+    text-align: center;
+    
+   
+    
+    
+}
+.input input{
+    margin: 15px;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: turquoise;
+    transition: 0.2s ease-in;
+    font-family: cursive;
+
+}
+.input input:hover{
+    transform: scaleX(1.85);
+    font-size: 13px;
+}
+
+.input textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: turquoise;
+    max-width: 400px;
+    max-height: 400px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.input button{
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.input button:hover{
+    background-color: turquoise;
+    color: white;
+}

@@ -1,0 +1,538 @@
+@import url(https://allfont.es/allfont.css?fonts=halloween-spider);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    width: 80%;
+    height: 500px;
+    background-color: black;
+    margin: 35px auto;
+    border-radius: 15px;
+}
+
+.cabezera{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.cabezera h1{
+    margin-top: 25px;
+    margin-left: 35px;
+    color: white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    font-family: 'Henny Penny', cursive;
+    
+
+}
+
+.cabezera h1:hover{
+    text-shadow: 4px 5px 5px orangered;
+ 
+}
+
+.cabezera span{
+    color: orangered;
+}
+
+.cabezera .navbar{
+    margin-top: 35px;
+    margin-right: 25px;
+}
+
+.cabezera .navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 15px;
+    font-family: 'Henny Penny', cursive;
+    transition: 0.3s;
+}
+
+.cabezera .navbar a:hover{
+    border-radius: 5px;
+    background-color: orangered;
+}
+
+.contenido-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 95px;
+}
+
+.contenido-header h2{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: orangered;
+    font-family:  'Gluten', cursive;
+    
+}
+.contenido-header p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Sacramento', cursive;
+}
+.contenido-header img{
+    width: 250px;
+    background-color: black;
+}
+
+.contenido-header button{
+    padding: 10px 15px;
+    margin-top: 35px;
+    margin-left: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    font-family: 'Gluten', cursive;
+    
+}
+
+.contenido-header button:hover{
+    background-color: orangered;
+    color: black;
+    border-radius: 5px;
+}
+
+.contenido-header .span{
+    text-shadow: 6px 4px 6px orangered;
+}
+
+main{
+    width: 90%;
+    height: 600px;
+    background-color: black;
+    margin: 35px auto;
+    border-radius: 15px;
+}
+
+main #disfraces{
+    text-align: center;
+    color: orange;
+    font-family: 'Henny Penny', cursive;
+    padding: 15px;
+    transition: 0.5s;
+    
+}
+main #disfraces h1{
+    transition: 0.3s;
+    cursor: pointer;
+}
+#disfraces h2{
+    text-align: center;
+    margin-top: 0;
+    margin-left: 538px;
+    border: 2px solid orangered;
+    width: 110px
+    
+    
+    
+}
+#disfraces h1:hover{
+    text-shadow: 4px 4px 6px orange;
+}
+
+.cajasdisfraces{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 85px;
+    
+    
+}
+
+.cajasdisfraces .caja{
+    
+    width: 200px;
+    height: 205px;
+    cursor: pointer;
+}
+
+.cajasdisfraces .caja img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cajasdisfraces .caja img:hover{
+    transform: scale(1.25);
+}
+
+ .botones{
+     justify-content: space-evenly;
+     display: flex;
+    margin: 90px auto;
+    
+
+    
+}
+.botones button{
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-family: 'Henny Penny', cursive;
+    transition: 0.5s;
+    font-size: 15px;
+    
+}
+
+.botones button:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.candy{
+    width: 80%;
+    height: 500px;
+    margin: 25px auto;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.candy .encabezado-candy{
+    display: flex;
+    justify-content: space-between;
+    color: orange;
+    font-family: 'Henny Penny', cursive;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.candy .encabezado-candy:hover{
+    text-shadow: 4px 4px 6px orange;
+}
+
+.candy .encabezado-candy h2{
+    font-size: 15px;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-left: 25px;
+    justify-content: space-evenly;
+   
+    
+    
+}
+.imagenes img{
+    transition: 0.3s;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imagenes img:hover{
+    transform: scale(1.25);
+}
+
+.contact{
+    margin: 25px auto;
+    width: 80%;
+    height: 700px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-family: 'Henny Penny', cursive;
+    color: whitesmoke;
+    
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.contact h1:hover{
+    text-shadow: 4px 4px 6px orange;
+}
+
+.contact h1 span{
+    color: orangered;
+    
+    cursor: pointer;
+}
+
+
+
+.form {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    padding-left: 40px;
+}
+
+.form #parrafo1{
+    font-family: 'Henny Penny', cursive;
+    color: red;
+    margin-left: 25px;
+}
+
+.form #parrafoemail{
+    color: red;
+    margin-left: 25px;
+    font-family: 'Henny Penny', cursive;
+}
+
+
+
+.form #parrafo3{
+    font-family: 'Henny Penny', cursive;
+    color: red;
+    margin-left: 25px;
+}
+.form textarea{
+    background-color: black;
+    color: white;
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px orangered solid;
+    transition: 0.3s;
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 100px;
+    min-height: 100px;
+
+
+
+}
+.form input{
+    margin: 15px;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px orangered solid;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form input:hover{
+    transform: scaleX(1.25);
+    font-size: 100%;
+}
+
+.form textarea{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form textarea:hover{
+    box-shadow: 4px 5px 6px orangered;
+}
+
+.form button{
+    padding: 10px;
+    margin-left: 60px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Henny Penny', cursive;
+    transition: 0.3s;
+}
+
+.form button:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-texto{
+    margin-top: 25px;
+    color: white;
+    margin-left: 25px;
+}
+.footer-texto h2{
+    margin-bottom: 15px;
+    font-family: 'Henny Penny', cursive;
+    cursor: pointer;
+}
+
+.footer-texto p{
+    font-family:'Sacramento', cursive ;
+}
+
+.footer-texto h2 span{
+    color: orangered;
+    cursor: pointer;
+    
+}
+.footer-texto .span{
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer-texto .span:hover{
+    color: orangered;
+    text-shadow: 4px 4px 6px orangered;
+}
+
+.iconos{
+    margin-top: 80px;
+    margin-right: 80px;
+
+}
+
+.iconos a{
+    text-decoration: none;
+    color: white;
+    
+    font-size: 25px;
+}
+.iconos a i{
+    padding: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.iconos a i:hover{
+    transform: scale(1.25);
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+ footer h3{
+     margin-top: 90px;
+     color: white;
+     margin-right: 25px;
+     font-family: cursive;
+ }
+
+
+ .preguntas{
+     width: 70%;
+     height: 400px;
+     background-color: black;
+     margin: auto;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .preguntas2{
+    color: white;
+ }
+
+ .preguntas-conteiner{
+     min-height: 300px;
+     max-height: 500px;
+     
+     width: 600px;
+ }
+
+ .texto{
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 15px;
+ }
+
+ .texto i{
+     cursor: pointer;
+     padding-top: 12px;
+    
+ }
+
+ #cerrar{
+     display: none;
+     color: orangered;
+ }
+
+ #cerrar2{
+     display: none;
+     color: orangered;
+ }
+ 
+
+ #parrafo{
+     width: 100%;
+     height: 80px;
+     background-color: #191919;
+     text-align: center;
+     border-bottom: 1px solid orangered;
+     border-radius: 5px;
+     display: none;
+     transition: all 0.3s ease;
+ }
+
+
+#parrafo4{
+     width: 100%;
+     height: 80px;
+     background-color: #191919;
+     text-align: center;
+     border-bottom: 1px solid orangered;
+     border-radius: 5px;
+     display: none;
+}
+
+#parrafo4 p{
+    padding-top: 15px;
+    font-family:'Henny Penny', cursive; 
+}
+
+ #parrafo p{
+     padding-top: 15px;
+     font-family:'Henny Penny', cursive; 
+ }
+
+ .preguntas2 h2{
+     margin-bottom: 25px;
+     text-align: center;
+     font-family: 'Henny Penny', cursive; 
+     font-size: 35px;
+     padding-top: 15px;
+ }
+
+ .preguntas2 span{
+     color: orangered;
+ }

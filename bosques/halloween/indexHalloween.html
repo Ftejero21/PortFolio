@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosHalloween.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5814e5440e.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="cabezera">
+
+            <h1>Hallo<span>ween</span></h1>
+            <nav class="navbar">
+                <a href="#disfraces">Customs</a>
+                <a href="#candy">Candy</a>
+                <a href="#contact">Contact</a>
+                <a href="#preguntas-frecuentes">Preguntas</a>
+            </nav>
+
+
+        </div>
+
+        <div class="contenido-header">
+            <img src="imagenes/calabaza.jpg" alt="Foto calabaza">
+            <div>
+                <h2>Hallo<span>ween</span> <span class="span">Party</span></h2>
+                <p>Welcome to the party more crazy of the world <br> , the party where the dead come back to live. <br>
+                    This is a web site , where you can to find <br>the best Halloween costumers for you party. </p>
+                <button>Contact Us</button>
+                <button>Buy right now</button>
+            </div>
+
+
+
+        </div>
+    </header>
+
+    <main>
+        <div id="disfraces">
+            <h1>customs</h1>
+            <h2></h2>
+        </div>
+
+        <div class="cajasdisfraces">
+
+            <div class="caja"> <img src="imagenes/disfraz1.jpg" alt=""></div>
+            <div class="caja"><img src="imagenes/disfraz2.jpg" alt=""></div>
+            <div class="caja"><img src="imagenes/disfraz3.jpg" alt=""></div>
+            <div class="caja"><img src="imagenes/disfraz4.jpg" alt=""></div>
+            <div class="caja"><img src="imagenes/disfraz5.jpg" alt=""></div>
+        </div>
+
+        <div class="botones">
+            <button> See More</button>
+            <button>Buy Right Now</button>
+        </div>
+    </main>
+
+    <div class="candy" id="candy">
+        <div class="encabezado-candy">
+            <img src="imagenes/calabazafondonegro.jpg" width="100px" alt="">
+            <div class="encabezados">
+                <h1>Candy</h1>
+                <h2>For your Friends</h2>
+            </div>
+            <img src="imagenes/calabazafondonegro.jpg" width="100px" alt="">
+        </div>
+
+        <div class="candy-contenido">
+            <div class="imagenes">
+                <div class="img">
+                    <img src="imagenes/caramelo1.jpg" width="80px" alt="">
+                </div>
+                <div class="img">
+                    <img src="imagenes/caramelo2.jpg" width="150px" alt="">
+                </div>
+                <div class="img">
+                    <img src="imagenes/caramelo3.jpg" width="150px" alt="">
+                </div>
+                <div class="img">
+                    <img src="imagenes/caramelo4.jpg" width="150px" alt="">
+                </div>
+            </div>
+            <div class="botones">
+                <button>See More</button>
+                <button>Buy Right Now</button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Contact <span>US</span></h1>
+
+        <div class="form">
+            <input id="nombre" type="text" placeholder="Ingrese Su nombre">
+            <p id="parrafo1"></p>
+            <input id="email" type="email" placeholder="Ingrese Su email">
+            <p id="parrafoemail"></p>
+            <textarea  name="" id="textarea" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
+            <p id="parrafo3"></p>
+            <button onclick=validar()>Send Message</button>
+        </div>
+    </div>
+
+    <div class="preguntas">
+        
+        <div class="preguntas2" id="preguntas-frecuentes">
+            <h2>Preguntas <span>Frecuentes</span></h2>
+            <div class="preguntas-conteiner">
+                <div class="texto">
+                    <h1>¿Tienen mucha azucar los caramelos?</h1>
+                    <i onclick=abrir() id="abrir" class="fas fa-angle-down"></i>
+                    <i onclick=cerrar() id="cerrar" class="fas fa-angle-up"></i>
+                </div>
+                <div id="parrafo">
+                    <p>No, nuestras chuches son muy sanas</p>
+                </div>
+
+
+
+                <div class="texto">
+                    <h1>¿Si se rompe un disfraz tiene garantia?</h1>
+                    <i onclick=abrir2() id="abrir2" class="fas fa-angle-down"></i>
+                    <i onclick=cerrar2() id="cerrar2" class="fas fa-angle-up"></i>
+                </div>
+                <div id="parrafo4">
+                    <p>Si Todos nuestros disfraces cuentan con una garantia de hasta 2 años</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="footer-texto">
+            <h2>Hallo<span>ween</span><span class="span"> party</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit <br>
+            . Illum a exercitationem quidem voluptate impedit
+            maxime dolor fuga blanditiis <br>. Laboriosam aliquid nihil quam ut officia porro et nulla magni labore nostrum!
+        </p>
+        </div>
+        
+        
+
+        <div class="iconos">
+            <a href="https://www.instagram.com/fernandotejero00/?hl=es" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Ftejero21" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fernando-tejero-fierro-a56176216/" target="blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <h3>Created for Fernando Tejero</h3>
+
+
+
+
+    </footer>
+
+
+
+    <script src="/bosques/halloween/main.js"></script>
+
+</body>
+
+</html>
