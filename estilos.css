@@ -143,12 +143,12 @@ nav ul li a:hover{
 
 .icons  #instagram:hover{
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    transform: rotate(365deg);
+    transform: rotate(360deg);
 }
 
 .icons  #linkedin:hover{
     background-color: #0e76a8 ;
-    transform: rotate(365deg);
+    transform: rotate(360deg);
 }
 
 .about-me{
