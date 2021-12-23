@@ -69,11 +69,12 @@ window.sr = ScrollReveal();
 
 
   function validar(){
-
+    const textarea = document.getElementById("textarea")
     const nombre = document.getElementById("nombre");
     const email = document.getElementById("email");
     let warnings1 = "";
     let warnings2 = "";
+    let warnings3 = "";
     let entrar = false;
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(nombre.value.length < 6){
@@ -88,10 +89,17 @@ window.sr = ScrollReveal();
     }
 
 
+    if(textarea.value.length <= 0){
+      entrar = true;
+      warnings3 += 'Escriba un Mensaje'
+    }
+
+
     if(entrar){
 
       document.getElementById("parrafo").innerHTML = warnings1;
       document.getElementById("parrafo2").innerHTML = warnings2;
+      document.getElementById("parrafo3").innerHTML = warnings3;
     }
 
 

@@ -139,9 +139,16 @@ nav ul li a:hover{
     border-radius: 50%;
 }
 
-.icons i:hover{
-    background-color: #f9004d;
-    transform: scale(1.25);
+
+
+.icons  #instagram:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    transform: rotate(365deg);
+}
+
+.icons  #linkedin:hover{
+    background-color: #0e76a8 ;
+    transform: rotate(365deg);
 }
 
 .about-me{
@@ -413,10 +420,10 @@ justify-content: space-between;
 }   
 
 .buttom button{
-    font-size: 35px;
+    font-size: 25px;
     background-color: transparent;
     color: white;
-    padding: 15px 15px;
+    padding: 10px 15px;
     border: black;
     border-radius: 50%;
     background-color: #191919;
@@ -425,7 +432,8 @@ justify-content: space-between;
 }
 
 .buttom button:hover{
-    transform:  scaleY(1.25);
+    transform: scale(1.25);
+    background-color: black;
 }
 
 
