@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navegacion{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+
+
+.logo h1{
+    margin-left: 35px;
+    border: 8px solid blue;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: blue;
+    position: fixed;
+    
+}
+
+
+
+.logo h1:hover{
+    color: red;
+    border: 8px solid red;
+}
+
+
+.navbar{
+    margin-right: 500px;
+    padding: 30px;
+}
+
+#inicio{
+    color: red;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 25px 55px;
+    font-size: 25px;
+    color: blue;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.imagen-principal{
+    position: relative;
+}
+
+.imagen-principal img{
+    width: 1194px;
+    height: 534px;
+    
+    
+}
+
+.imagen-texto{
+   opacity: 0.9;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+    width: 700px;
+    height: 400px;
+    background-color: lightgray;
+    padding: 45px;
+    border-radius:10px;
+    min-width: 700px;
+}
+
+.imagen-texto h1{
+    text-align: left;
+    font-size: 65px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.imagen-texto p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+.Principal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.social-Medias{
+    position: fixed;
+    float: right;
+    margin-left: 1180px;
+}
+
+.social-Medias ul{
+    padding: 25px;
+    font-size: 25px;
+    list-style-type: none;
+       
+}
+.social-Medias ul li{
+    margin: 35px;
+    cursor: pointer;
+    padding: 7px 7px;
+    transition: 0.3s ease-in;
+    display: flex;
+    justify-content: center; 
+    border-radius: 50%;
+}
+
+.social-Medias ul #linkedin:hover{
+    background-color: #0e76a8 ;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.social-Medias ul #git:hover{
+    background-color: #171515;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.social-Medias ul #instagram:hover{
+    color: white;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    transform: rotate(360deg);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones h1{
+    padding: 15px;
+    margin-top: 160px;
+    margin-left: 950px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+
+.botones h1:hover{
+    opacity: 0.5;
+    color: blue;
+
+}
+
+.servicios{
+    width: 100%;
+    height: 100vh;
+    
+}
+.encabezado{
+    width: 100%;
+    height: 350px;
+    background-color: #097373;
+    
+    
+}
+
+.encabezado h1{
+    font-size: 55px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.encabezado p{
+    line-height: 25px;
+}
+
+.encabezado h1,p{
+    margin-left: 175px;
+    color: white;
+    letter-spacing: 2px;
+}
+.caja-conteiner{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.caja{
+    width: 350px;
+    height: 300px;
+    background-color: lightgray;
+    margin-top: -88px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 145px;
+    
+}
+
+.caja button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.caja h2{
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.caja p{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 35px;
+    color: black;
+}
+
+.caja a{
+    text-decoration: none;
+    color: red;
+    margin-left: 40px;
+    transition: 0.3s;
+}
+
+.caja a:hover{
+    color: blue;
+}
+
+.contacto{
+    margin-top: 400px;
+    width: 100%;
+    height: 100vh;
+    background-color: #097373;
+   
+}
+
+.contacto h2{
+    padding-top: 65px;
+    font-size: 45px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.formulario-conteiner{
+    width: 800px;
+    height: 400px;
+    margin: 70px auto;
+    
+}
+
+.formulario-textos{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.formulario-textos input{
+    margin: 15px;
+    padding: 10px 105px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    margin-bottom: 55px;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+.formulario-textos ::placeholder{
+    color: white;
+    text-align: left;
+}
+
+
+
+
+
+.formulario-email{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+
+
+}
+.formulario-email input{
+    margin-bottom: 25px;
+    padding: 10px 310px;
+    text-align: left;
+    outline: none;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.formulario-email ::placeholder{
+    color: white;
+    text-align: left;
+
+}
+
+.formulario-textarea{
+    display: flex;
+    justify-content: left;
+    padding-top: 35px;
+    margin-bottom: 25px;
+}
+
+.formulario-textarea textarea{
+    padding: 10px 310px ;
+    outline: none;
+    color: white;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    cursor: pointer;
+    max-height: 200px;
+    
+   
+}
+
+.formulario-textarea  ::placeholder{
+    color: white;
+}
+
+.boton-formulario{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boton-formulario button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #0e76a8;
+    
+    
+}
+
+.footer-texto p{
+    margin-right: 800px;
+}
