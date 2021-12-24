@@ -9,6 +9,7 @@
 
 body{
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 
@@ -101,19 +102,17 @@ nav a:hover{
     font-size: 35px;
     font-family: fantasy;
     transition: 0.3s ease-in;
+    cursor: pointer;
     width: 0;
 }
 
 .peliculas-titulo:hover{
     color: turquoise;
-    font-size: 50px
+    transform: scale(1.25);
 }
 
 .caja{
-    
-    
-    
-    
+    cursor: pointer;
     font-weight: bold;
     width: 240px;
     height: 300px;
@@ -122,16 +121,15 @@ nav a:hover{
     margin: 10px;
     border-radius: 15px;
     transition: 0.3s;
-    box-shadow: 15px 15px 10px
     
-
+    
 }
 
 
 
 .caja:hover{
     transform: scale(1.15);    
-    
+    box-shadow: 5px 5px 10px white;
 }
     
 .peliculas{
@@ -177,11 +175,12 @@ nav a:hover{
       font-size: 35px;
       transition: 0.3s ease-in;
       width: 0;
+      cursor: pointer;
   }
 
   .series-titulo:hover{
       color: turquoise;
-      font-size: 50px;
+      transform: scale(1.25);
   }
 
 
@@ -236,7 +235,9 @@ footer{
 
 .Encabezado-footer h2{
     text-align: center;
-    margin-bottom: 3px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 
 .Encabezado-footer p{
@@ -258,94 +259,169 @@ footer{
     text-align: center;
     cursor: pointer;
     color: white;
-    
-    
+    transition: 0.3s;
+    border-radius: 5px;
     
 }
 
 .iconos-container i:hover{
     transform: scale(1.50);
     background-color: turquoise;
-    border-radius: 5px;
+   
+    
 }
 
-form{
-    width: 420px;
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    width: 400px;
     height: 400px;
-    background-color: white ;
-    margin: 0px auto;
-    margin-top: 200px;
-    border-radius: 5px;
-    box-shadow: 15px 15px 15px 0px  turquoise;
-
-
-
-
 
 }
 
-.encabezado-formulario{
-    color: black;
-    font-family: cursive;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 25px;
-    transition: 0.5s;
+.controladores{
    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.encabezado-formulario:hover{
-    color: turquoise;
-}
-
-
-.input{
+.formulario{
     
-    display: block;
-    text-align: center;
-    
-   
-    
-    
-}
-.input input{
-    margin: 15px;
-    padding: 10px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: turquoise;
-    transition: 0.2s ease-in;
-    font-family: cursive;
+    width: 100%;
+    height: 100vh;
 
 }
-.input input:hover{
-    transform: scaleX(1.85);
-    font-size: 13px;
+
+.controles{
+    width: 400px;
+    height: 500px;
+    margin: auto;
 }
 
-.input textarea{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: turquoise;
-    max-width: 400px;
-    max-height: 400px;
-    text-decoration: none;
-    text-transform: none;
+.controles .formulario-texto{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.input button{
-    margin-top: 25px;
-    border-radius: 5px;
-    padding: 8px;
-    transition: 0.5s;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-
-.input button:hover{
-    background-color: turquoise;
+.controles .formulario-texto ::placeholder{
     color: white;
+}
+
+.controles .formulario-texto input{
+    padding: 10px 70px;
+    margin-left: 20px;
+    border: 1px solid orangered;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-bottom: 50px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.controles .formulario-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controles .formulario-email ::placeholder{
+    color: white;
+}
+
+.controles .formulario-email input{
+    padding: 10px 200px;
+    background-color: transparent;
+    border: 1px solid orangered;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+
+}
+
+.textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea textarea{
+    background-color: transparent;
+    border: 1px solid orangered;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 50px;
+    min-width: 500px;
+    max-height: 200px;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton button{
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid orangered;
+}
+
+.encabezado-contactame{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color:#191919;
+    padding-top: 55px;
+    
+}
+
+.encabezado-contactame .titulo h1{
+    font-size: 35px;
+    margin-left: 45px;
+    color: white;
+}
+
+.navbar{
+    margin-top: 15px;
+    margin-right: 255px;
+}
+
+.encabezado-contactame .navbar a{
+    padding-left: 105px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ a{
+    margin-left: 55px;
+    margin-right: 55px;
+    text-decoration: none;
+}
+
+.redes-sociales a i{
+    
 }
