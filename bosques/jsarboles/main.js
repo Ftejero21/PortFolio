@@ -69,39 +69,43 @@ function validar(){
     const nombre = document.getElementById("nombre");
     const apellido = document.getElementById("apellido");
     const email = document.getElementById("Email");
-    let entrar = false;
+    
     let warnings = "";
     let warnings2 = "";
     let warnings3 = "";
     let regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(nombre.value.length < 6){
-        entrar = true;
+        
         warnings += 'Nombre Muy Corto';
+        document.getElementById("parrafo").innerHTML = warnings;
+    }else{
+        document.getElementById("parrafo").innerHTML = '';
     }
 
     if(apellido.value.length < 6){
-        entrar = true;
+       
         warnings2 += 'El apellido es Muy Corto'
+        document.getElementById("parrafo2").innerHTML = warnings2;
+    }else{
+        document.getElementById("parrafo2").innerHTML = '';
     }
 
 
 
     if(!regexemail.test(email.value)){
-        entrar = true;
-        warnings3 += 'El Email esta incompleto'
         
+        warnings3 += 'El Email esta incompleto'
+        document.getElementById("parrafo3").innerHTML = warnings3;
+    }else{
+        document.getElementById("parrafo3").innerHTML = '';
     }
 
 
 
+    
 
 
-
-    if(entrar){
-            document.getElementById("parrafo").innerHTML = warnings;
-            document.getElementById("parrafo2").innerHTML = warnings2;
-            document.getElementById("parrafo3").innerHTML = warnings3;
-    }
+    
 
 
     
