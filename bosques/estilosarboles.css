@@ -273,6 +273,10 @@ nav .navegacion a:hover{
     
 }
 
+.form input::placeholder{
+    color: black;
+}
+
 .form p{
     margin-top: 5px;
     text-align: left;

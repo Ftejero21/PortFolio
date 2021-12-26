@@ -351,13 +351,17 @@ nav ul li a:hover{
 
 }
 
+.contactame .controls input::placeholder{
+    color: white;
+}
+
 .contactame .controls p{
     color: red;
 }
 .contactame .controls textarea{
     max-width: 300px;
-    max-height: 300px;
-    min-width: 150px;
+    max-height: 200px;
+    min-width: 300px;
     min-height: 150px;
     background-color: transparent;
     border: 1px solid orangered;
@@ -369,6 +373,10 @@ nav ul li a:hover{
     cursor: pointer;
     outline: none;
     
+}
+
+.contactame .controls textarea::placeholder{
+    color: white;
 }
 
 .contactame .controls button{
