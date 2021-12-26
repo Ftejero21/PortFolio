@@ -145,4 +145,6 @@ window.sr = ScrollReveal();
   }
 
 
-  
+  function alerta(){
+    alert("Funcion No Disponible");
+  }
