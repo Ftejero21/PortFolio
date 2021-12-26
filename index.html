@@ -112,24 +112,24 @@
             </div>
         </div>
     </div>
-        
-        <div class="contactame" id="ContacMe">
+        <form action="correo.php" method="post">
+            <div class="contactame"  id="ContacMe" >
 
                     <h2>Contact <span>Me</span></h2>
 
                     <div class="controls">
-                        <input class="input1" type="text" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
+                        <input class="input1" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
                         <p id="parrafo"></p>
-                        <input class="input2" type="email" id="email" placeholder="Ingrese su email" autocomplete="off">
+                        <input class="input2" type="email" name="email" id="email" placeholder="Ingrese su email" autocomplete="off">
                         <p id="parrafo2"></p>
-                        <textarea class="input3" name="" id="textarea" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
+                        <textarea class="input3" name="mensaje" id="textarea" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
                         <p id="parrafo3"></p>
                         <button class="input3"  onclick=validar() >Send Message</button>
                     </div>
+            </div>
+        </form>
         
-        </div>
-        
-        <section class="preguntasfrecuentes" id="preguntas">
+            <section class="preguntasfrecuentes" id="preguntas">
                 <h1>Preguntas <span> Frecuentes</span></h1>
             <div class="contenedor-textos">
                 <div class="textos">
