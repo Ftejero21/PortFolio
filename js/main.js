@@ -69,9 +69,9 @@ window.sr = ScrollReveal();
 
 
   function validar(){
-    const textarea = document.getElementById("textarea")
-    const nombre = document.getElementById("nombre");
-    const email = document.getElementById("email");
+    const textarea = document.getElementById("textarea").value
+    const nombre = document.getElementById("nombre").value
+    const email = document.getElementById("email").value
     let parrafo = document.getElementById("parrafo")
     let warnings1 = "";
     let warnings2 = "";
@@ -79,7 +79,8 @@ window.sr = ScrollReveal();
     
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     parrafo = "";
-    if(nombre.value.length < 6){
+    
+    if(nombre.length < 6){
       
       warnings1 += 'Nombre Muy Corto';
       document.getElementById("parrafo").innerHTML = warnings1
@@ -88,7 +89,7 @@ window.sr = ScrollReveal();
     }
     
 
-    if(!regexEmail.test(email.value)){
+    if(!regexEmail.test(email)){
       
       warnings2 += 'Email Incorrecto';
       document.getElementById("parrafo2").innerHTML = warnings2
@@ -97,7 +98,7 @@ window.sr = ScrollReveal();
     }
 
 
-    if(textarea.value.length <= 0){
+    if(textarea.length <= 0){
       
       warnings3 += 'Escriba un Mensaje'
       document.getElementById("parrafo3").innerHTML = warnings3
@@ -105,8 +106,12 @@ window.sr = ScrollReveal();
       document.getElementById("parrafo3").innerHTML = ''
     }
 
-
     
+  
+    
+    
+  
+      
 
 
 
@@ -138,3 +143,6 @@ window.sr = ScrollReveal();
     document.getElementById("cerrar2").style.display = "none"
     document.getElementById("abrir2").style.display = "block"
   }
+
+
+  
