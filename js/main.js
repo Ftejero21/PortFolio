@@ -33,7 +33,7 @@ window.sr = ScrollReveal();
   sr.reveal('.imagen-about',{
     duration: 1500 ,
     origin: 'top',
-    distance: '250px'
+    distance: '150px'
   });
 
   sr.reveal('.textosprojects',{
