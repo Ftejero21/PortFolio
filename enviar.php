@@ -1,15 +1,18 @@
 <?php
 
+$destinatario = "fernandotejero@gmail.com";
+
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
-
-
-if(mail('fernandotejero566@gmail.com',$nombre,$email,$mensaje)){
-    echo "Email enviado";
+if(mail($destinatario,$nombre,$email,$mensaje)){
+    echo "email enviado";
 }else{
     echo "Error";
 }
+
+
+
 
 ?>

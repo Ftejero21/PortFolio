@@ -113,17 +113,17 @@
             </div>
         </div>
     </div>
-        <Form  method="post" action="enviar.php">
+        <Form action="enviar.php" method="post" >
             <div class="contactame"  id="ContacMe" >
 
                     <h2>Contact <span>Me</span></h2>
 
                     <div class="controls">
-                        <input class="input1" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
+                        <input class="input1" type="text" name="nombre" required id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
                         <p id="parrafo"></p>
-                        <input class="input2" type="email" name="email" id="email" placeholder="Ingrese su email" autocomplete="off">
+                        <input class="input2" type="email" name="email" required id="email" placeholder="Ingrese su email" autocomplete="off">
                         <p id="parrafo2"></p>
-                        <textarea class="input3" name="mensaje" id="textarea" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
+                        <textarea class="input3" name="mensaje" required id="textarea" cols="30" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
                         <p id="parrafo3"></p>
                         <button class="input3"  onclick=validar() >Send Message</button>
                     </div>
