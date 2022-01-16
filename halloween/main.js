@@ -38,18 +38,6 @@ let entrar = false;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 function abrir(){
 
     document.getElementById("parrafo").style.display = "block"
